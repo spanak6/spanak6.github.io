@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d22">
+  <meta name="description" content="Meet SPANAK: six Deakin University BRIDGE Fellows bringing different research perspectives to Australia's protein future. Connect with the team on LinkedIn.">
+  <title>Meet the team · SPANAK</title>
+  <style>
+    :root { --forest: #123d22; --green: #246d3d; --ink: #1f2a33; --muted: #5d6861; --sage: #dce9dc; --line: #dbe3dc; --paper: #f4f7f3; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+    body { margin: 0; font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; color: var(--ink); background: #fff; font-size: 1rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #bc8c31; outline-offset: 6px; border-radius: 4px; }
+    .wrap { width: min(1120px, calc(100% - 96px)); margin-inline: auto; }
+    .skip { position: absolute; top: -100px; left: 1rem; background: #fff; color: var(--forest); padding: .65rem 1rem; z-index: 10; }
+    .skip:focus { top: 1rem; }
+    .masthead { background: var(--forest); color: white; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 26px 0; border-bottom: 1px solid #ffffff26; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.35rem; font-weight: 750; letter-spacing: .17em; }
+    .brand svg { width: 26px; height: 30px; color: #bcd9b7; }
+    .nav-link { text-decoration: none; font-size: .9rem; color: #e1eae1; padding: 6px 0; border-bottom: 1px solid #bcd9b7; }
+    .nav-link:hover { color: #fff; border-bottom-width: 2px; }
+    .hero { position: relative; display: grid; grid-template-columns: 1fr 280px; align-items: center; gap: 40px; padding: 66px 0 70px; }
+    .eyebrow { margin: 0 0 21px; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 650; }
+    .hero .eyebrow { color: #c4d8be; }
+    h1 { font-size: clamp(2.7rem, 5.4vw, 4.4rem); font-weight: 500; line-height: 1.09; letter-spacing: -.055em; margin: 0 0 24px; }
+    h1 em { color: #c4dbb9; font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+    .hero-copy { max-width: 570px; color: #d4e0d4; font-size: 1.05rem; line-height: 1.75; margin: 0; }
+    .botanical { width: 100%; max-width: 270px; justify-self: end; }
+    .intro { display: flex; justify-content: space-between; align-items: end; gap: 35px; padding: 55px 0 28px; }
+    .intro .eyebrow { color: var(--green); margin-bottom: 9px; }
+    h2 { font-size: clamp(1.9rem, 3vw, 2.4rem); line-height: 1.2; font-weight: 500; letter-spacing: -.04em; margin: 0; }
+    .intro p:last-child { max-width: 325px; margin: 0; color: var(--muted); font-size: .95rem; }
+    .team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-bottom: 58px; }
+    .person { background: var(--paper); border: 1px solid #e5ebe3; border-radius: 10px; padding: 27px 26px 22px; display: flex; flex-direction: column; transition: border-color .2s, transform .2s; }
+    .person:hover { border-color: #a0b69b; transform: translateY(-3px); }
+    .person-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+    .avatar { width: 58px; height: 58px; flex: 0 0 58px; border-radius: 50%; display: grid; place-items: center; background: #dce8d7; color: #294e2b; font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; }
+    .person:nth-child(2) .avatar, .person:nth-child(5) .avatar { background: #e8e3d1; color: #65532c; }
+    .person:nth-child(3) .avatar, .person:nth-child(6) .avatar { background: #dce6e7; color: #315359; }
+    .li-mark { font-family: Arial, sans-serif; border: 1.5px solid #768b77; color: #3b5e42; border-radius: 3px; width: 23px; height: 23px; display: grid; place-items: center; font-size: 15px; font-weight: 700; line-height: 1; }
+    .field { color: var(--green); font-size: .78rem; font-weight: 650; margin: 0 0 9px; letter-spacing: .025em; }
+    h3 { font-size: 1.24rem; font-weight: 650; letter-spacing: -.025em; line-height: 1.3; margin: 0 0 12px; }
+    .bio { font-size: .94rem; color: var(--muted); margin: 0 0 26px; }
+    .profile { margin-top: auto; padding-top: 17px; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 8px; color: var(--forest); text-decoration: none; font-weight: 650; font-size: .87rem; min-height: 44px; }
+    .profile:hover span { text-decoration: underline; text-underline-offset: 4px; }
+    .profile svg { width: 15px; height: 15px; flex-shrink: 0; }
+    .closing { border-top: 1px solid var(--line); padding: 31px 0 35px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .closing strong { display: block; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 1.35rem; color: var(--forest); }
+    .closing p { margin: 4px 0 0; color: var(--muted); font-size: .9rem; }
+    .signature { text-align: right; max-width: 280px; font-size: .8rem; color: var(--muted); }
+    .signature b { display: block; color: var(--forest); letter-spacing: .14em; font-size: .9rem; margin-bottom: 4px; }
+    footer { border-top: 1px solid #e9ede7; padding: 18px 0; color: var(--muted); font-size: .8rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 18px; }
+    @media (max-width: 950px) {
+      .wrap { width: calc(100% - 56px); }
+      .hero { grid-template-columns: 1fr 185px; gap: 25px; }
+      .person { padding: 24px 20px 20px; }
+      .team { gap: 16px; }
+    }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding: 44px 0 46px; }
+      .botanical { display: none; }
+      .team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .intro { align-items: start; flex-direction: column; gap: 16px; padding-top: 38px; }
+      .intro p:last-child { max-width: 440px; }
+      .closing { align-items: start; }
+    }
+    @media (max-width: 510px) {
+      .wrap { width: calc(100% - 40px); }
+      header { padding: 20px 0; }
+      .brand { font-size: 1.1rem; }
+      .nav-link { font-size: .83rem; }
+      .hero .eyebrow { font-size: .75rem; letter-spacing: .1em; }
+      .team { grid-template-columns: 1fr; gap: 14px; padding-bottom: 34px; }
+      .person { padding: 24px; }
+      .person-top { margin-bottom: 18px; }
+      .closing, footer .wrap { flex-direction: column; gap: 20px; }
+      .signature { text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .person { transition: none; } .person:hover { transform: none; } }
+    @media print { .masthead { background: white; color: var(--forest); } .hero-copy, .hero .eyebrow { color: var(--muted); } h1 em { color: var(--forest); } .hero { padding: 24px 0; } .botanical, nav { display: none; } .team { gap: 12px; } .person { break-inside: avoid; } }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#team">Skip to the team</a>
+  <div class="masthead">
+    <div class="wrap">
+      <header>
+        <a class="brand" href="#top" aria-label="SPANAK home"><svg viewBox="0 0 30 34" fill="none" aria-hidden="true"><path d="M15 31V13M15 23C3 23 2 13 3 8c9 0 14 5 12 15ZM15 17C15 6 20 2 28 2c1 8-4 15-13 15Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>SPANAK</a>
+        <nav aria-label="Main navigation"><a class="nav-link" href="#team">Meet the team</a></nav>
+      </header>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Deakin University · BRIDGE Fellows 2026</p>
+          <h1>Meet the minds<br>behind <em>SPANAK.</em></h1>
+          <p class="hero-copy">Six researchers. Different perspectives. A shared interest in a more sustainable protein future for Australia.</p>
+        </div>
+        <svg class="botanical" viewBox="0 0 280 300" fill="none" aria-hidden="true">
+          <circle cx="143" cy="144" r="118" stroke="#aec4a7" stroke-opacity=".22"/>
+          <circle cx="143" cy="144" r="93" stroke="#aec4a7" stroke-opacity=".12"/>
+          <path d="M130 274C148 224 145 149 158 67" stroke="#bdd4ad" stroke-width="2" stroke-linecap="round"/>
+          <path d="M144 220C92 222 65 184 71 151c44-1 77 26 73 69Z" fill="#426b43" stroke="#a9c398" stroke-width="1.4"/>
+          <path d="M146 188c-3-45 28-73 71-74 5 39-24 71-71 74Z" fill="#284f31" stroke="#a9c398" stroke-width="1.4"/>
+          <path d="M149 148C106 145 86 113 93 84c37 3 61 27 56 64Z" fill="#284f31" stroke="#a9c398" stroke-width="1.4"/>
+          <path d="M155 112c-4-35 17-62 50-67 9 32-12 61-50 67Z" fill="#426b43" stroke="#a9c398" stroke-width="1.4"/>
+          <path d="m143 219-55-51m59 19 54-57m-51 18-43-48m48 11 37-53" stroke="#a9c398" stroke-opacity=".7" stroke-width="1.2"/>
+          <circle cx="59" cy="105" r="4" fill="#c4a660"/><circle cx="222" cy="218" r="3" fill="#c4a660"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <main class="wrap">
+    <section id="team" aria-labelledby="team-title">
+      <div class="intro">
+        <div><p class="eyebrow">The people behind the pitch</p><h2>Different disciplines. One team.</h2></div>
+        <p>Get to know our research interests and connect with us on LinkedIn.</p>
+      </div>
+      <div class="team">
+        <!-- Edit a team member's name, research summary and LinkedIn URL here. -->
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">KC</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Food &amp; Nutrition</p>
+          <h3>Kumkum CR</h3>
+          <p class="bio">Exploring plant bioactives, their bioavailability and their potential benefits for health.</p>
+          <a class="profile" href="https://www.linkedin.com/in/kumkumcr/" target="_blank" rel="noopener noreferrer" aria-label="View Kumkum CR on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">SN</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Software Engineering</p>
+          <h3>Shashiwadana Nirmani</h3>
+          <p class="bio">Studying the human side of open source software and personalised project recommendations.</p>
+          <a class="profile" href="https://www.linkedin.com/in/shashiwadana-nirmani/" target="_blank" rel="noopener noreferrer" aria-label="View Shashiwadana Nirmani on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+                  <a class="profile" style="margin-top:0; border-top:0; padding-top:8px" href="https://shashiwadana.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shashiwadana Nirmani's personal website (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>shashiwadana.com</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">PS</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Science Education</p>
+          <h3>Pavani Sandeepani</h3>
+          <p class="bio">Investigating student motivation, belonging and active learning in science education.</p>
+          <a class="profile" href="https://www.linkedin.com/in/pavani-sandeepani-382133185/" target="_blank" rel="noopener noreferrer" aria-label="View Pavani Sandeepani on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">AR</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Sustainable Farming Systems</p>
+          <h3>Arani Ranasinghe</h3>
+          <p class="bio">Researching farming-system resilience and adaptation for more sustainable agri-food futures.</p>
+          <a class="profile" href="https://www.linkedin.com/in/arani-ranasinghe-73b70b168/" target="_blank" rel="noopener noreferrer" aria-label="View Arani Ranasinghe on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">AR</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Climate &amp; Society</p>
+          <h3>Abdul Rehman</h3>
+          <p class="bio">Examining climate-induced migration and how communities experience environmental change.</p>
+          <a class="profile" href="https://www.linkedin.com/in/abdul-rehman-graduate-researcher/" target="_blank" rel="noopener noreferrer" aria-label="View Abdul Rehman on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><div class="avatar" aria-hidden="true">SD</div><span class="li-mark" aria-hidden="true">in</span></div>
+          <p class="field">Education</p>
+          <h3>Sara Dharmawansa</h3>
+          <p class="bio">A graduate researcher in Deakin University's School of Education, bringing an education perspective to the team.</p>
+          <a class="profile" href="https://www.linkedin.com/in/sara-dharmawansa-647000443/" target="_blank" rel="noopener noreferrer" aria-label="View Sara Dharmawansa on LinkedIn (opens in a new tab)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg><span>Connect on LinkedIn</span></a>
+        </article>
+      </div>
+    </section>
+    <aside class="closing" aria-label="About SPANAK">
+      <div><strong>Good ideas start with a conversation.</strong><p>We'd love to connect. Find us on LinkedIn above.</p></div>
+      <div class="signature"><b>SPANAK</b>Sustainable Protein Alternatives Network<br>for Australia's Kitchens</div>
+    </aside>
+  </main>
+  <footer><div class="wrap"><span>SPANAK · BRIDGE Fellows 2026</span><span>More protein, from more sources.</span></div></footer>
+</body>
+</html>
